@@ -1,21 +1,5 @@
 import {
-  Breadcrumbs,
-  Cards,
-  Carousels,
-  Collapses,
-  Dropdowns,
-  Forms,
-  Jumbotrons,
-  ListGroups,
-  Navbars,
-  Navs,
-  Paginations,
-  Popovers,
-  ProgressBar,
-  Switches,
-  Tables,
-  Tabs,
-  Tooltips,
+  
 } from './Base';
 
 import { ButtonDropdowns, ButtonGroups, Buttons, BrandButtons } from './Buttons';
@@ -45,25 +29,9 @@ export {
   ButtonGroups,
   BrandButtons,
   Buttons,
-  Tooltips,
-  Tabs,
-  Tables,
   Charts,
   Dashboard,
   Widgets,
-  Jumbotrons,
-  Switches,
-  ProgressBar,
-  Popovers,
-  Navs,
-  Navbars,
-  ListGroups,
-  Forms,
-  Dropdowns,
-  Collapses,
-  Carousels,
-  Cards,
-  Breadcrumbs,
-  Paginations,
+  
 };
 

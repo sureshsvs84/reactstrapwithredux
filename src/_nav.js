@@ -124,6 +124,19 @@ export default {
       ],
     },
     {
+      name: 'userDetails',
+      url: '/user',
+      icon: 'icon-cursor',
+      children: [
+        {
+          name: 'userList',
+          url: '/user/userList',
+          icon: 'icon-user',
+        }
+       
+      ],
+    },
+    {
       name: 'Buttons',
       url: '/buttons',
       icon: 'icon-cursor',
