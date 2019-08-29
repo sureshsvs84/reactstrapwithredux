@@ -124,13 +124,18 @@ export default {
       ],
     },
     {
-      name: 'userDetails',
-      url: '/user',
+      name: 'CRUD-App',
+      url: '/CRUD',
       icon: 'icon-cursor',
       children: [
         {
-          name: 'userList',
-          url: '/user/userList',
+          name: 'CRUD-DefaultForm',
+          url: '/CRUD/DefaultForm',
+          icon: 'icon-user',
+        },
+        {
+          name: 'CRUD-FormikFrom',
+          url: '/CRUD/FormikForm',
           icon: 'icon-user',
         }
        
