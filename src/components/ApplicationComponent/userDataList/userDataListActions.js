@@ -34,15 +34,16 @@ const actions = {
 export const AddUserDetails = (data) => (dispatch, getstate) => {
     dispatch(actions.AddUserDetails(data));
 };
-export const FetchUserDetails = (data) => async (dispatch, getstate) => {
+
+export const FetchUserDetails = () => async (dispatch, getstate) => {
     const url = baseAPIConfig.baseUrl+userAPIConfig.userlist;
-    const param={};
-    const requestPayload = new RequestPayload(param);
+    const params={};
+    const requestPayload = new RequestPayload(params);
     const response = await getData(url, requestPayload).catch(error => {
          console.log('data error');
-        });      
+        });
         if(response){
-            dispatch(actions.FetchUserDetails(response.data && response.data));
+            dispatch(actions.FetchUserDetails(response));          
         }
 };
 

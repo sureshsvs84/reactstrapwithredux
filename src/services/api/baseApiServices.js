@@ -12,37 +12,38 @@ axios.defaults.headers.put['Accept'] = 'application/json';
 axios.defaults.headers.put['Acces-Control-Allow-Origin'] = '*';
 //Post Method
 const param = {}
-  /**
- * @param {*} url 
- * @param {*} config 
- */
-export const postData = async (url,config)=>{
-        axios.post (url, config.data)
+/**
+* @param {*} url 
+* @param {*} config 
+*/
+export const postData = async (url, config) => {
+    axios.post(url, config.data)
         .then((response) => {
             if (response && response.status === 200 && response.statusText === 'OK') {
                 console.log(response);
                 return response.result;
             }
-            
+
         }, (error) => {
             console.log(error);
             return error;
         });
 }
- /**
- * @param {*} url 
- * @param {*} config 
- */
-export const getData = async( url,config)=>{
-       axios.get (url, {param:config.data})
+/**
+* @param {*} url 
+* @param {*} config 
+*/
+export const getData = async (url, config) => {
+    const response = await axios.get(url, { param: config.data })
         .then((response) => {
-        if (response && response.status === 200) {
-            console.log(response);
-            return response.data;
-        }
-        
-    }, (error) => {
-        console.log(error);
-        return error;
-    });
+            if (response && response.status === 200) {
+                console.log(response);
+                return response.data;
+            }
+
+        }, (error) => {
+            console.log(error);
+            return error;
+        });
+    return response;
 }
