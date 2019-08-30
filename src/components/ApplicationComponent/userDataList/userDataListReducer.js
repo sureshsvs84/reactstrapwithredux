@@ -24,6 +24,12 @@ export const UserDataListReducer = (state = initialState, action) => {
                     ...state,              
                 };
                 return state;
+        case userListActionType.FETCH_USERLIST:
+            state = {
+                ...state,
+                userDataList:data
+            };
+            return state;
         default:
             return state;
     }

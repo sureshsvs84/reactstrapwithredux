@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Badge, Card, CardBody, CardFooter, CardHeader, Col, Row, Collapse, Fade } from 'reactstrap';
 import { getlocalizeData } from '../../../utils/commonUtils';
+import ReactTable from "react-table";
+import "react-table/react-table.css";
 const localConstant = getlocalizeData();
 
 class UserDataList extends Component {
@@ -8,6 +10,9 @@ class UserDataList extends Component {
         super(props);
         this.state = {};
         this.updatedData = {};      
+    }
+    componentDidMount(){
+        this.props.actions.FetchUserDetails();
     }
     render() {       
         const { userDataList } = this.props;
@@ -20,9 +25,38 @@ class UserDataList extends Component {
                 {localConstant.userList.pageTitle}
               </CardHeader>
                <CardBody>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+
+             <ReactTable
+                data={this.props.userDataList}
+                columns={[
+                    {
+                      Header: "First Name",
+                      accessor: "name",
+                      minWidth: 300
+                    },
+                    {
+                      Header: "User",
+                      accessor: "username",
+                      minWidth: 300
+                    },
+                    {
+                      Header: "Email",
+                      accessor: "email",
+                      minWidth: 300
+                    },
+                    {
+                      Header: "Phone",
+                      accessor: "phone",
+                      minWidth: 300
+                    },
+                    {
+                      Header: "WebSite",
+                      accessor: "website",
+                      minWidth: 300
+                    }
+                  ]}
+        
+        />
               </CardBody>
             </Card>
           </Col>
