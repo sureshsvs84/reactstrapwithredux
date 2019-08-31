@@ -3,6 +3,7 @@ import { configuration } from '../../appConfig';
 
 axios.defaults.baseURL = configuration.apiBaseUrl;
 //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+axios.defaults.headers.common['Access-Control-Allow-Origin']= '*';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 axios.defaults.headers.post['Accept'] = 'application/json';
 axios.defaults.headers.post['Acces-Control-Allow-Origin'] = '*';
