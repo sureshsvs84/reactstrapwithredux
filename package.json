@@ -1,15 +1,15 @@
 {
-  "name": "@coreui/coreui-free-react-admin-template",
-  "version": "2.6.0",
-  "description": "CoreUI React Open Source Bootstrap 4 Admin Template",
+  "name": "ui-Kit-react-admin-template",
+  "version": "1.0.0",
+  "description": "UI-Kit React Open Source Bootstrap 4 Admin Template",
   "author": "suresh selvaraj",
-  "homepage": "https://sureshsvs84.github.io/reactstrap/",
+  "homepage": "https://sureshsvs84.github.io/reactstrapwithredux/",
   "copyright": "Copyright 2017-2019 sharavisual",
   "license": "MIT",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@github.com:coreui/coreui-free-react-admin-template.git"
+    "url": "https://github.com/sureshsvs84/reactstrapwithredux.git"
   },
   "dependencies": {
     "@coreui/coreui": "^2.1.12",
@@ -58,7 +58,7 @@
     "deploy": "gh-pages -d build"
   },
   "bugs": {
-    "url": "https://sureshsvs84.github.io/reactstrap/"
+    "url": "https://sureshsvs84.github.io/reactstrapwithredux/"
   },
   "eslintConfig": {
     "extends": "react-app"
