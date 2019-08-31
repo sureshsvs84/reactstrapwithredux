@@ -6,6 +6,8 @@ import './index.css';
 import App from './App';
 import store from './store';
 import * as serviceWorker from './serviceWorker';
+import dotenv from 'dotenv';
+dotenv.config();
 
 ReactDOM.render(<BrowserRouter>
 <Provider store={store}>
