@@ -37,6 +37,8 @@ const Users = React.lazy(() => import('./views/Users/Users'));
 const User = React.lazy(() => import('./views/Users/User'));
 //CRUD - APP 
 const UserList = React.lazy(() => import('./views/CRUD-Form/userList'));
+const PostList = React.lazy(() => import('./views/CRUD-Form/postList'));
+const PostDetails = React.lazy(() => import('./views/CRUD-Form/postDetails'));
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
@@ -81,7 +83,9 @@ const routes = [
   { path: '/charts', name: 'Charts', component: Charts },
   { path: '/users', exact: true,  name: 'Users', component: Users },
   { path: '/users/:id', exact: true, name: 'User Details', component: User },
-  { path: '/CRUD/DefaultForm', exact: true,  name: 'UsersList', component: UserList } 
+  { path: '/CRUD/DefaultForm', exact: true,  name: 'UsersList', component: UserList },
+  { path: '/CRUD/posts', exact: true,  name: 'PostList', component: PostList },
+  { path: '/CRUD/posts/:id', exact: true,  name: 'PostDetails', component: PostDetails } 
 ];
 
 export default routes;

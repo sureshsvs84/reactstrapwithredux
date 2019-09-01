@@ -10,3 +10,7 @@ export const baseAPIConfig={
 export const userAPIConfig={
     userlist:'/users'
 }
+export const postAPIConfig={
+    posts:'/posts',
+    comments:'comments'
+}

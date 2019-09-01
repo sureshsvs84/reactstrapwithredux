@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch,withRouter } from 'react-router-dom';
+
 // import { renderRoutes } from 'react-router-config';
 import './App.scss';
 
@@ -35,4 +36,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);

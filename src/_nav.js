@@ -129,6 +129,11 @@ export default {
       icon: 'icon-cursor',
       children: [
         {
+          name: 'CRUD- Post',
+          url: '/CRUD/Posts',
+          icon: 'icon-user',
+        },
+        {
           name: 'CRUD-DefaultForm',
           url: '/CRUD/DefaultForm',
           icon: 'icon-user',
