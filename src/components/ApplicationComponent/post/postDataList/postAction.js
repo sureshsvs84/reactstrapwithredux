@@ -1,6 +1,6 @@
 import { postActionType } from '../../../../constants/actionType';
 import { baseAPIConfig,postAPIConfig,RequestPayload } from '../../../../apiConfig';
-import { getData } from '../../../../services/api/baseApiServices';
+import { getData,postData } from '../../../../services/api/baseApiServices';
 import { async } from 'q';
 
 const actions = {
@@ -39,7 +39,14 @@ const actions = {
             type: postActionType.FETCH_COMMENTS,
             data: payload
         }
+    ),
+    PostComments: (payload) => (
+        {
+            type: postActionType.POST_COMMENTS,
+            data: payload
+        }
     )
+  
   
 };
 
@@ -79,6 +86,22 @@ export const FetchComments = (id) => async (dispatch, getstate) => {
         });
         if(response){
             dispatch(actions.FetchComments(response));          
+        }
+};
+export const PostComments = (data) => async (dispatch, getstate) => {
+    const url = baseAPIConfig.baseUrl+postAPIConfig.posts;
+    const params={
+        id:data.id,
+        title:data.title,
+        body:data.comments};
+    const requestPayload = new RequestPayload(params);
+    const response = await postData(url, requestPayload).catch(error => {
+         console.log('data error');
+        });
+        debugger;
+        if(response.data){
+           //dispatch(actions.FetchComments(response));
+           alert('Save Success');          
         }
 };
 

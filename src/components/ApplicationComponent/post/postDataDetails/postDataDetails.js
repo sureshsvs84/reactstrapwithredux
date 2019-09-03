@@ -15,7 +15,8 @@ class PostDataDetails extends Component {
         this.updatedData = {};
         this.selectedRowData={}; 
         this.handleEdit = this.handleEdit.bind(this); 
-        this.handleDelete = this.handleDelete.bind(this);     
+        this.handleDelete = this.handleDelete.bind(this); 
+        this.handleInputChange = this.handleInputChange.bind(this);    
     }
     //Onclick Handler    
     handleEdit=(data)=>{ 
@@ -26,6 +27,18 @@ class PostDataDetails extends Component {
     }
     handleDelete=(data)=>{
       console.log(data);
+    }
+    handleInputChange(event) {
+        const target = event.target;
+        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const name = target.name;    
+        this.setState({
+          [name]: value
+        });
+      }
+    handleSubmitComments=(e)=>{
+      e.preventDefault();
+      this.props.actions.PostComments(this.state);
     }
     loading = () => <div className="animated fadeIn pt-1 text-center">Loading...</div>
     render() {       
@@ -55,14 +68,14 @@ class PostDataDetails extends Component {
                        </CardHeader>
                        
                         <CardBody>
-                        <Form >
+                        <Form onSubmit={this.handleSubmitComments}>
                             <FormGroup>
                                 <Label htmlFor="company">Title</Label>
-                                <Input type="text" id="Title" placeholder="Enter your Title" />
+                                <Input type="text" id="Title" name='title' placeholder="Enter your Title" onChange={this.handleInputChange} />
                             </FormGroup>
                             <FormGroup>
                                 <Label htmlFor="comments">Comments</Label>
-                                <Input type="textarea" name="textarea-input" id="comments" rows="9" />
+                                <Input type="textarea" name="comments" id="comments" rows="9" onChange={this.handleInputChange}/>
                             </FormGroup>
                             <Button type="submit" size="sm" color="primary"><i className="fa fa-dot-circle-o"></i> Submit</Button>
                             <Button type="reset" size="sm" color="danger"><i className="fa fa-ban"></i> Reset</Button>
