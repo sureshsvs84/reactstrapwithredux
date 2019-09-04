@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8330f9645fefbc71ca15da4fca185be9",
+    "revision": "1405a95187cd34f77ad02dd9e7bd925e",
     "url": "/reactstrapwithredux/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactstrapwithredux/static/css/8.57cab3c7.chunk.css"
   },
   {
-    "revision": "9e76812de9b2d50df535",
-    "url": "/reactstrapwithredux/static/css/main.182ec8b0.chunk.css"
+    "revision": "5c42ac63b02c00cd7697",
+    "url": "/reactstrapwithredux/static/css/main.718a3eb1.chunk.css"
   },
   {
     "revision": "83ae30e51c1b3fdd6513",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactstrapwithredux/static/js/12.212ce4ef.chunk.js"
   },
   {
-    "revision": "df452f9afef77d9bfa77",
-    "url": "/reactstrapwithredux/static/js/13.a9905f62.chunk.js"
+    "revision": "0eb9f201f1676f60ec9e",
+    "url": "/reactstrapwithredux/static/js/13.c30b9c72.chunk.js"
   },
   {
     "revision": "c7e60e25f6607edfd26d",
@@ -80,20 +80,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactstrapwithredux/static/js/21.d33fce35.chunk.js"
   },
   {
-    "revision": "479dfe7a286d97ecada7",
-    "url": "/reactstrapwithredux/static/js/22.b1f5a686.chunk.js"
+    "revision": "358ea0c30c4298752de5",
+    "url": "/reactstrapwithredux/static/js/22.ee5112e3.chunk.js"
   },
   {
     "revision": "3a7d8475a153f3c241a6",
     "url": "/reactstrapwithredux/static/js/23.c4d8af63.chunk.js"
   },
   {
-    "revision": "e15d591c07c39164059e",
-    "url": "/reactstrapwithredux/static/js/24.3dcab542.chunk.js"
+    "revision": "46880d21eb8d048db47e",
+    "url": "/reactstrapwithredux/static/js/24.d3194c7a.chunk.js"
   },
   {
-    "revision": "4d8ec82a46d5a0278db1",
-    "url": "/reactstrapwithredux/static/js/25.9814233d.chunk.js"
+    "revision": "12d9534ede5fdfd9ecbf",
+    "url": "/reactstrapwithredux/static/js/25.39021b07.chunk.js"
   },
   {
     "revision": "268908879ec6ac831918",
@@ -216,8 +216,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactstrapwithredux/static/js/52.0a945ebd.chunk.js"
   },
   {
-    "revision": "4013f5a9d0151ae9aad9",
-    "url": "/reactstrapwithredux/static/js/53.4cd3a037.chunk.js"
+    "revision": "640ded7cb5eb178fd8bf",
+    "url": "/reactstrapwithredux/static/js/53.a95d1c75.chunk.js"
   },
   {
     "revision": "a7d66f68b8c76cbdafae",
@@ -264,12 +264,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/reactstrapwithredux/static/js/9.0e4bb4e6.chunk.js"
   },
   {
-    "revision": "9e76812de9b2d50df535",
+    "revision": "5c42ac63b02c00cd7697",
     "url": "/reactstrapwithredux/static/js/main.a5d88625.chunk.js"
   },
   {
-    "revision": "2ccc56a78e506acf2c5e",
-    "url": "/reactstrapwithredux/static/js/runtime~main.6b25221d.js"
+    "revision": "f0bb2bffcbbd9fd0fe91",
+    "url": "/reactstrapwithredux/static/js/runtime~main.2fcfb6e1.js"
   },
   {
     "revision": "0087dce419a7376eb06c837f740d31eb",
