@@ -14,6 +14,7 @@ class Modals extends Component {
       warning: false,
       danger: false,
       info: false,
+      slideModal:false
     };
 
     this.toggle = this.toggle.bind(this);
@@ -24,6 +25,7 @@ class Modals extends Component {
     this.toggleWarning = this.toggleWarning.bind(this);
     this.toggleDanger = this.toggleDanger.bind(this);
     this.toggleInfo = this.toggleInfo.bind(this);
+    this.toggleSlideModal = this.toggleSlideModal.bind(this);
   }
 
   toggle() {
@@ -71,6 +73,11 @@ class Modals extends Component {
   toggleInfo() {
     this.setState({
       info: !this.state.info,
+    });
+  }
+  toggleSlideModal() {
+    this.setState({
+      slideModal: !this.state.slideModal,
     });
   }
 
@@ -218,6 +225,22 @@ class Modals extends Component {
                   <ModalFooter>
                     <Button color="primary" onClick={this.toggleInfo}>Do Something</Button>{' '}
                     <Button color="secondary" onClick={this.toggleInfo}>Cancel</Button>
+                  </ModalFooter>
+                </Modal>
+
+                <Button onClick={this.toggleSlideModal} className="mr-1">Launch demo modalSlide</Button>
+                <Modal isOpen={this.state.slideModal} toggle={this.toggleSlideModal} className={'modal-slide ' + this.props.className}>
+                  <ModalHeader toggle={this.toggleSlideModal}>Modal title</ModalHeader>
+                  <ModalBody>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                  </ModalBody>
+                  <ModalFooter>
+                    <Button color="primary" onClick={this.toggleSlideModal}>Do Something</Button>{' '}
+                    <Button color="secondary" onClick={this.toggleSlideModal}>Cancel</Button>
                   </ModalFooter>
                 </Modal>
 

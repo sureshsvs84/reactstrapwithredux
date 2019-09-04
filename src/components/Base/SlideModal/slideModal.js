@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import { Button, Card, CardBody, CardHeader, Col, Modal, ModalBody, ModalFooter, ModalHeader, Row } from 'reactstrap';
 
  const SlideModal =(props)=>{
-    debugger;
-    return(
+     return(
         <Modal isOpen={props.isModalOpen} toggle={props.toggleModal}
-                       className={'modal-lg ' + props.className}>
+                       className={'modal-slide ' + props.className}>
                   <ModalHeader toggle={props.toggleModal}>Modal title</ModalHeader>
                   <ModalBody>
                   {props.children}
