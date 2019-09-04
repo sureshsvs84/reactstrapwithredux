@@ -69,3 +69,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 # React-Table
 https://www.npmjs.com/package/react-table
+
+# Core Ui - Layout Props and default CSS Class Reference 
+https://coreui.io/docs/
